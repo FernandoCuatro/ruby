@@ -11,4 +11,3 @@ saludo = 'buen día'
 # Igual que PHP, si tenemos comillas dobles, dentro podemos utilizar comillas sensillas
 # Con las comillas sensillas lo toma como texto plano
 puts "Hola #{nombre}, que tenga #{saludo}" 
-  
