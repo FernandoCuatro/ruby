@@ -1,8 +1,12 @@
 # definimos un metodo con parametro
-def saludar(nombre)
-	saludo = "buen día"
-
+def saludar(nombre, saludo)
 	puts "Hola #{nombre}, que tengas #{saludo}"
 end
 
-saludar("Fernando")
+print "Ingresa tu nombre: "
+nombre = gets 
+nombre = nombre.chomp
+
+# Tambien funcionaria
+# saludar"Fernando"
+saludar(nombre, "bonita noche")
