@@ -1,3 +1,4 @@
+# Array de datos
 videojuegos = ["zelda","mario"]
 
 # Una opcion
