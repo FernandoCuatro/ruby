@@ -39,3 +39,13 @@ contactos = contactos.merge({maria: 3534, carlos: 15675})
 
 # Para contar los elementos del hash
 contactos.length
+
+# Para obtener todas las llaves, nos devuelve un arreglo
+contactos.keys
+
+# Buscamos una cierta llave, de lo contrario buscamos otra opcion
+contactos.has_key?(:aldo) # devuelve true o false
+
+# Tambien paa añadir
+contactos,store(:andres, 54954)
+
