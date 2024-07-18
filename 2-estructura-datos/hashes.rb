@@ -49,3 +49,11 @@ contactos.has_key?(:aldo) # devuelve true o false
 # Tambien paa añadir
 contactos,store(:andres, 54954)
 
+# Nos devuelve todos los valores
+contactos.values
+
+# Por si tenemos el valor, nos valida si true o false
+contactos.has_value?(:1234)
+
+# Hay que tener cuidado con las mayusculas, es sencible a las mayus
+contactos.has_value?("perez")
