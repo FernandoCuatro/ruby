@@ -24,3 +24,18 @@ contactos[:aldo]
 
 # Forma abreviada para crear un Hash
 contactos = {aldo: 1234, Fernando: 5341}
+
+# Para añadir un elemento al hash
+contactos[:juan] = 1234
+
+# si queremos añadir mas de un elemento al mismo tiempo
+# Nos devuelve un nuevo hash
+contactos.merge({maria: 3534, carlos: 15675})
+
+# Si queremos usar este ultimo que se creo 
+contactos = contactos.merge({maria: 3534, carlos: 15675})
+
+# Ahora seria el mismo valor que se se esta modificando
+
+# Para contar los elementos del hash
+contactos.length
