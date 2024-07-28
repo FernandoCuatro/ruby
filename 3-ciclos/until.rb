@@ -1,3 +1,5 @@
+#  "Hasta que"
+
 # a diferencia del ciclo while se va a ejecutar 
 # miestras la condicion que tenga enfrente sea false
 respuesta = ""
