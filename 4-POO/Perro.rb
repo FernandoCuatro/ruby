@@ -33,12 +33,29 @@ class Perro
 	# def edad
 	# 	@edad
 	# end
+
+	# Vamos a definir metodos
+	def ladrar(ladrido)
+		puts " * #{ladrido} * * #{ladrido} * * #{ladrido} *"
+	end
+
+	def descripcion
+		puts "Soy de raza #{@raza}, de color #{@color} y tengo #{@edad}"
+	end
+
 end
 
 # Nueva instancia
 perro = Perro.new("Pastor aleman", "Cafe", "5 años")
 
-# llamamos los metodos
+# llamamos los atributos
 puts perro.raza
 puts perro.color
 puts perro.edad
+
+puts ""
+# hablemos con los metodos
+perro.ladrar("ladrando")
+perro.descripcion
+
+
