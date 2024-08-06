@@ -43,6 +43,12 @@ class Perro
 		puts "Soy de raza #{@raza}, de color #{@color} y tengo #{@edad}"
 	end
 
+	# Normalmente se hace el puts perro
+	# Aqui dentra el String para mostrar el objeto
+	def to_s
+		puts "Soy de raza #{@raza}, de color #{@color} y tengo #{@edad}"
+	end
+
 end
 
 # Nueva instancia
@@ -56,6 +62,10 @@ puts perro.edad
 puts ""
 # hablemos con los metodos
 perro.ladrar("ladrando")
-perro.descripcion
+# perro.descripcion
 
+puts ""
 
+# Como usamos el to_s
+# se usa solo 
+puts perro
