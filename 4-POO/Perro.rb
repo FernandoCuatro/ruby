@@ -1,7 +1,15 @@
 # Definimos la clase
 class Perro
 	# Esto es un tipo getter and setter
-	attr_reader :raza, :color, :edad
+	# attr_reader :raza, :color, :edad
+
+	# Readers and Writers
+	# Nos permiten asignar valores a variables de instancia
+	# attr_writer :color
+
+	# Si tenemos un reader and writer para un atributo es comun tener un accesor
+	# Y esto nos permite tanto leer como escribir
+	attr_accessor :raza, :color, :edad
 
 	# Variables de instancia
 	def initialize(raza, color, edad)
@@ -13,7 +21,6 @@ class Perro
 	end
 
 	# Atributos
-
 	# Con lo de la linea 4 no necestamos este codigo
 	# def raza 
 	# 	@raza
