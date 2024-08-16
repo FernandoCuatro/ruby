@@ -9,8 +9,8 @@ class List
 	end
 
 	# Metodo para añadir un elemento a la lista
-	def add_item(texto)
-		item = Item.new
+	def add_item(text)
+		item = Item.new(text)
 
 		# A la lista le añadimos el articulo
 		@items.push(item)
@@ -30,4 +30,10 @@ class List
 	def remove_all
 		@items.clear
 	end
+
+
+
+
+
+
 end
