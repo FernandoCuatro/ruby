@@ -30,10 +30,4 @@ class List
 	def remove_all
 		@items.clear
 	end
-
-
-
-
-
-
 end
