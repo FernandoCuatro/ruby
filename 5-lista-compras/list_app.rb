@@ -59,8 +59,8 @@ class ListApp
 				print "Numero Articulo a Eliminar: "
 				articulo = gets.to_i
 
-				@list.remove_item(articulo)
-				print "Articulo #{articulo} Removido"
+				item = @list.remove_item(articulo)
+				print "El articulo: #{item.text} Removido"
 				puts ""
 				puts "----- xxxxx -----"
 				puts ""
@@ -80,8 +80,8 @@ class ListApp
 				print "Numero Articulo a Completar: "
 				articulo = gets.to_i
 
-				@list.check_item(articulo)
-				print "Tarea Completada"
+				item = @list.check_item(articulo)
+				print "#{item.text} - Tarea Completada"
 				puts ""
 				puts "----- xxxxx -----"
 				puts ""
@@ -105,6 +105,10 @@ class ListApp
 			when 's'
 				break
 
+			else
+				puts "Operación no reconocida"
+				puts "----- xxxxx -----"
+				puts ""
 			end
 		end
 

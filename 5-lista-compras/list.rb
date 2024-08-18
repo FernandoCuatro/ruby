@@ -27,6 +27,7 @@ class List
 	# Marcar el ítem
 	def check_item(index)
 		@items[index].checked = true
+		@items[index]
 	end
 
 	# Método que nos ayude a remover todos los artículos
