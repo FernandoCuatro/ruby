@@ -1,7 +1,7 @@
 # ruby item.rb
 # Consola interactiva irb
 # required "./item.rb"
-class item
+class Item
 	attr_writer :text, :checked
 
 	# Metodo para inializar
@@ -14,9 +14,9 @@ class item
 	def to_s
 		# Si esta con check es que ya lo compramos
 		if @checked
-			"[ x ] " + @text
+			"[x] " + @text
 		else
-			"[   ] " + @text
+			"[ ] " + @text
 		end
 	end
 end

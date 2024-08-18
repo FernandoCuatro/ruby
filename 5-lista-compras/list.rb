@@ -1,14 +1,17 @@
+# Tenemos que requerir la clase de item.rb
+require "./item.rb"
+
 class List
-	# Metodo
+	# Método
 	attr_writer :items
 
-	# Inicializador
+	# Iniciador
 	def initialize()
-		# Variable de instancia a nuevo arreglo de articulos
+		# Variable de instancia a nuevo arreglo de artículos
 		@items = Array.new()
 	end
 
-	# Metodo para añadir un elemento a la lista
+	# Método para añadir un elemento a la lista
 	def add_item(text)
 		item = Item.new(text)
 
@@ -21,14 +24,26 @@ class List
 		@items.delete_at(index)
 	end
 
-	# Marcar el item
+	# Marcar el ítem
 	def check_item(index)
 		@items[index].checked = true
 	end
 
-	# Metodo que nos ayude a remover todos los articulos
+	# Método que nos ayude a remover todos los artículos
 	def remove_all
 		@items.clear
+	end
+
+	# Métodos para mostrar todos los artículos
+	def show_all
+		if @items.length == 0
+			puts "[] - No hay artículos en tu lista de compras"
+		else
+			# Listamos
+			@items.each_index do |index|
+				puts index.to_s + " - " + @items[index].to_s
+			end
+		end
 	end
 	
 end
