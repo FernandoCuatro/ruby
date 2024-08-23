@@ -9,6 +9,7 @@
 def hola
 	yield
 	puts "Hola desde la funcion"
+	
 	yield # con esto salta al bloque de codigo que le pasamos 
 	puts "Hola desde la funcion"
 end
