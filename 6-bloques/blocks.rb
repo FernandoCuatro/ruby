@@ -7,15 +7,16 @@
 
 # Metodo comun
 def hola
-	yield
+	# yield
 	puts "Hola desde la funcion"
-	
-	yield # con esto salta al bloque de codigo que le pasamos 
-	puts "Hola desde la funcion"
+	resultado = 2 + 2 # Esto es lo que el bloque toma como argumento
+	yield resultado # con esto salta al bloque de codigo que le pasamos 
+	# puts "Hola desde la funcion"
 end
 
 # Pero le vamos a pasar un bloque de codigo
 # Si pasamos yield sin ningun bloque de codigo, da un error debe de mandar un bloque de codigo
-hola do 
-	puts "Hola desde el bloque"
+# Si vamos a recibir argumentos, establecemos los parametros
+hola do |resultado|
+	puts "El resultado de la operacion es: #{resultado}"
 end
