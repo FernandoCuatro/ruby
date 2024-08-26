@@ -9,6 +9,7 @@
 def hola
 	# yield
 	puts "Hola desde la funcion"
+
 	resultado = 2 + 2 # Esto es lo que el bloque toma como argumento
 	yield resultado # con esto salta al bloque de codigo que le pasamos 
 	# puts "Hola desde la funcion"
