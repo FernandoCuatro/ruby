@@ -16,7 +16,8 @@ def hola
 end
 
 # Pero le vamos a pasar un bloque de codigo
-# Si pasamos yield sin ningun bloque de codigo, da un error debe de mandar un bloque de codigo
+# Si pasamos yield sin ningun bloque de codigo,
+# da un error debe de mandar un bloque de codigo
 # Si vamos a recibir argumentos, establecemos los parametros
 hola do |resultado|
 	puts "El resultado de la operacion es: #{resultado}"
