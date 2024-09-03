@@ -15,8 +15,7 @@ def hola
 	# puts "Hola desde la funcion"
 end
 
-# Pero le vamos a pasar un bloque de codigo
-# Si pasamos yield sin ningun bloque de codigo,
+# Pero le vamos a pasar un bloque de codigo Si pasamos yield sin ningun bloque de codigo,
 # da un error debe de mandar un bloque de codigo
 # Si vamos a recibir argumentos, establecemos los parametros
 hola do |resultado|
